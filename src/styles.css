@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+
+.app_container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+input {
+  border: solid 1px #e0e0e0;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 250px;
+  margin-right: 20px;
+}
+
+button {
+  background-color: yellowgreen;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#tasks {
+  margin: 15px;
+  overflow-y: scroll;
+}
+
+ol li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 24px;
+  font-size: 14px;
+  color: #444444;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ol li::before {
+  position: absolute;
+  content: "O";
+  width: 5px;
+  height: 5px;
+  top: 5px;
+  left: 0;
+}
+
+ol li.checked {
+  text-decoration: line-through;
+}
+
+ol li.checked::before {
+  position: absolute;
+  content: "✅";
+  width: 5px;
+  height: 5px;
+  top: 5px;
+  left: 0;
+}
+
+.editCrossContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+ol li div {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+}
+
+ol li.edit {
+  display: none;
+}
+
+.container {
+}
+
+.header {
+}
